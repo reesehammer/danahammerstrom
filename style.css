@@ -252,6 +252,11 @@ looks like we might have to add to classes at the same time, but that's kind
 /* end nav menu */
 
 /* start intro */
+
+.background {
+  background-color: red;
+}
+
 .intro {
 	background-color: #27292d;
 	color: #e9eaea;
@@ -259,6 +264,8 @@ looks like we might have to add to classes at the same time, but that's kind
 	background-position: 50% 50%;
 	height:40vh;
 	animation: hero_slide 30s linear;
+  max-width: 1200px;
+  margin: auto;
 }
 
 @keyframes hero_slide {
