@@ -1,27 +1,38 @@
 <!DOCTYPE html>
+
 <!--
 
-Ideas:
-- built the Earl Nightingale quote into a quote section within <nav>
-- fade around nav btn to avoid text
+----------------------------
+----------------------------
+----------------------------
+
+||||||||||||    |||      |||
+|||      |||    |||      |||
+|||      |||    |||      |||
+||||||||||||    |||      |||
+||| \\\         ||||||||||||
+|||  \\\        |||      |||
+|||   \\\       |||      |||
+|||    \\\      |||      |||
+|||     \\\     |||      |||
+
+----------------------------
+----------------------------
+----------------------------
+
+Hey, what are you doing here? ;)
+
+reesehammerstrom@gmail.com
 
 -->
-<!--
 
-Hey, what's up,
-
-Strange seeing you here... hit me up any time: reesehammerstrom@gmail.com
-
-Alwways inclined to meet curious people
-
--->
 
 <html>
 
   <head>
 
-    <title>Dana Hammerstrom | HMBHS</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>@reesehammer</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0 ,user-scalable=no">
 	   <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/wARhimV.png"/>
      <!-- Google Analytics -->
@@ -38,36 +49,49 @@ Alwways inclined to meet curious people
 
   <body>
 
-<!--
-  	<div class="desktop">
-  		<div class="d_cont">
-  			<div class="d_content">
-  				<h1>Mobile only</h1>
-  				<p>Text me a link to site:</p>
-  			</div>
-  		</div>
-  	</div>
+    <div class="master_wrap">
+
+      <div class="desktop">
+    		<div class="d_cont">
+    			<div class="d_content">
+    				<h1>Hey, I'm Reese.</h1>
+    				<p>Some things on my mind:</p><div class="cycle">
+                <section> <!-- move this div as a class of section?? -->
+                	<h3>
+                		<div>
+                			<span>Wife</span>
+                			<span>Santa Barbara</span>
+                			<span>eCommerce</span>
+                			<span>Zeus</span>
+                			<span>Golf</span>
+                		</div>
+                	</h3>
+                </section>
+              </div>
+    			</div>
+    		</div>
+    	</div>
 
 
-  	<div class="mobile">-->
-
-      <div>
-  		<!-- Main btn to open nav -->
+    <div class="mobile">
+  		<!-- Main btn to open nav hide for now
         <div class="nav_btn" id="nav_btn">
-          <button onclick="openNav()">v</button>
+          <button onclick="openNav()">+</button>
         </div>
+      -->
   		<!-- Btn to close the nav when it's open -->
   		<div class="nav_hide_btn hide" id="close_nav">
   			<div class="close_nav">
-  				<button onclick="closeNav()">v</button>
+  				<button onclick="closeNav()">-</button>
   			</div>
   		</div>
 
-  		<!-- The nav -->
+
+  		<!-- The nav   -->
 		<div class="nav hide" id="nav_bar">
   			<div class="nav_wrap">
 	  				<div class="item">
-	  					<button onclick="window.location.href = 'https://nomadgoods.com/'; " href="https://nomadgoods.com/">Yo</button>
+	  					<button onclick="window.location.href = 'https://reesehammer.com/airtable'; " href="https://reesehammer.com/airtable">AirTable</button>
 	  				</div>
 		  			<div class="item">
 		  				<button onclick="window.location.href = 'https://nomadgoods.com/'; " href="https://nomadgoods.com/">Yo</button>
@@ -81,8 +105,8 @@ Alwways inclined to meet curious people
   			</div>
   		</div>
 
-  		<!-- Nav Block (+) -->
 
+  		<!-- Nav Block (+) -->
   		<div class="hide" id="block_plus">
   			<div class="block">
 	  			<div class="block_cont">
@@ -92,43 +116,97 @@ Alwways inclined to meet curious people
   		</div>
 
 
-
-  <div class="background">
-    <!-- hero img in hero -->
+		<!-- hero img in hero -->
 		<div class="intro" style="background-image: url(hero_1.jpg);">
-      <div class="hero-fade">
+
+		</div><p class="caption">Isla Vista, CA | 12.30.20</p>
+
+
+
+  		<div class="hero-fade">
         <div class="profile-img" style="background-image: url(headshot2020.jpg)">
   			</div>
 
   			<div class="intro-cont">
   				<div class="hero-txt">
-            <h1>Dana Hammerstrom</h1>
-            <h2>Just trying to have a great school year</h2>
-            <a target="_blank" href="https://www.instagram.com/danahammertime">@danahammertime</a>
+            <h1>Reese Hammerstrom</h1>
+            <h2>Ecommerce Director | Nomad</h2>
+
 
 
           </div>
   			</div>
-      </div>
-		</div>
+      </div><div class="main-content">
+
+  			<!-- Start intro section -->
 
 
-  		<div class="main-content">
+        <div class="quote">
+          <div class="img-2" style="background-image: url(zeus.jpg);"></div>
+          <div>
+            <h3>Zeus</h3>
+            <p>He looks cute and innocent, but he quite annoying and is constantly a force to reckon with. If you've been on a Zoom call with me, you've probably met him. If you have owned a Dachshund, you know the struggle.</p>
+          </div>
+        </div>
 
-            <div class="quote">
-		    			<div>
-		    				<p>"Your world is a living expression of how you are using and have used your mind."</p>
-                <a hred="#">- Earl Nightingale</a>
-		    			</div>
+        <div class="quote">
+          <div class="img-2" style="background-image: url(zeus.jpg);"></div>
+          <div>
+            <h3>Zeus</h3>
+            <p>He looks cute and innocent, but he quite annoying and is constantly a force to reckon with. If you've been on a Zoom call with me, you've probably met him. If you have owned a Dachshund, you know the struggle.</p>
+          </div>
+        </div>
 
-		    		</div>
+        <div class="quote">
+          <div class="img-2" style="background-image: url(zeus.jpg);"></div>
+          <div>
+            <h3>Zeus</h3>
+            <p>He looks cute and innocent, but he quite annoying and is constantly a force to reckon with. If you've been on a Zoom call with me, you've probably met him. If you have owned a Dachshund, you know the struggle.</p>
+          </div>
+        </div>
+
+        <div class="quote">
+          <div class="img-2" style="background-image: url(zeus.jpg);"></div>
+          <div>
+            <h3>Zeus</h3>
+            <p>He looks cute and innocent, but he quite annoying and is constantly a force to reckon with. If you've been on a Zoom call with me, you've probably met him. If you have owned a Dachshund, you know the struggle.</p>
+          </div>
+        </div>
+
+        <div class="quote">
+          <div class="img-2" style="background-image: url(zeus.jpg);"></div>
+          <div>
+            <h3>Zeus</h3>
+            <p>He looks cute and innocent, but he quite annoying and is constantly a force to reckon with. If you've been on a Zoom call with me, you've probably met him. If you have owned a Dachshund, you know the struggle.</p>
+          </div>
+        </div>
+
+
 
 		    	<!-- </div> -->
 
-		</div>
-  </div>
 
- 	</div>
+
+
+    </div>
+
+ 	<section class="footer">
+
+    <div>
+        <a target="_blank" href="https://www.instagram.com/reesehammer">Instagram</a>
+    <a target="_blank" href="https://nomadgoods.com/">Nomad</a>
+    <a target="_blank" href="https://www.linkedin.com/in/reesehammer/">LinkedIn</a>
+    <a target="_blank" href="https://ts.la/reese51104
+">Get 1,000 Free Supercharging Miles</a>
+    </div>
+
+    <div>
+        <a target="_blank" href="https://github.com/reesehammer
+        ">written by @reesehammer</a>
+    </div>
+
+
+</section></div>
 
 
  	<!-- Open Nav -->
@@ -146,6 +224,9 @@ Alwways inclined to meet curious people
 
 		  	var close_nav_btn = document.getElementById("close_nav");
 		  	close_nav_btn.classList.remove("hide");
+
+        var nav_operer_animate_change  = document.getElementById("nav_btn");
+        nav_operer_animate_change = add("nav-has-opened")
 		}
 
 	</script>
@@ -181,6 +262,16 @@ Alwways inclined to meet curious people
 	</script>
 
 
-  </body>
 
+
+
+</div>
+
+</body>
+<!--
+
+"Your world is a living expression of how you are using and have used your mind."
+- Earl Nightingale
+
+-->
 </html>
