@@ -8,9 +8,15 @@ export const useIntersectionObserver = (
   const ref = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
+    // Ensure rootMargin has a default value if not provided
+    const finalOptions = {
+      threshold: options.threshold,
+      rootMargin: options.rootMargin || '0px 0px -100px 0px'
+    };
+
     const observer = new IntersectionObserver(([entry]) => {
       setIsIntersecting(entry.isIntersecting);
-    }, options);
+    }, finalOptions);
 
     if (ref.current) {
       observer.observe(ref.current);
