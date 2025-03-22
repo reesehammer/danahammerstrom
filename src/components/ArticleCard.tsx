@@ -1,5 +1,6 @@
 
-import { ArrowUpRight } from 'lucide-react';
+import { useState } from 'react';
+import { ArrowUpRight, Eye } from 'lucide-react';
 import { useIntersectionObserver } from '../utils/animations';
 import { ArticleItem } from '../utils/data';
 
@@ -9,23 +10,36 @@ interface ArticleCardProps {
 }
 
 const ArticleCard = ({ article, index }: ArticleCardProps) => {
-  const [ref, isIntersecting] = useIntersectionObserver();
+  const [ref, isIntersecting] = useIntersectionObserver({ threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div 
       ref={ref as React.RefObject<HTMLDivElement>}
-      className={`group relative overflow-hidden bg-white rounded-lg border border-sand-100 shadow-sm hover-lift transition-all duration-700 ${
+      className={`group relative overflow-hidden bg-white rounded-lg border border-sand-100 shadow-sm hover:shadow-md transition-all duration-500 ${
         isIntersecting ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8' 
       }`}
       style={{ transitionDelay: `${index * 150}ms` }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <div className="relative aspect-[4/3] overflow-hidden bg-sand-100">
         <img 
           src={article.image} 
           alt={article.title}
-          className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+          className={`w-full h-full object-cover transition-all duration-700 ${isHovered ? 'scale-110 blur-[2px]' : 'scale-100'}`}
           loading="lazy"
         />
+        <div className={`absolute inset-0 bg-black/30 transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}></div>
+        
+        <div className={`absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent transition-all duration-500 ${
+          isHovered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+        }`}>
+          <h3 className="text-white font-medium leading-tight mb-1">{article.title}</h3>
+          <div className="flex items-center text-white/80 text-sm">
+            <Eye className="h-3 w-3 mr-1" /> Read article
+          </div>
+        </div>
       </div>
       
       <div className="p-4">

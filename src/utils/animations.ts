@@ -1,22 +1,21 @@
 
 import { useEffect, useState, useRef } from 'react';
 
+export interface IntersectionOptions {
+  threshold: number;
+  rootMargin?: string;
+}
+
 export const useIntersectionObserver = (
-  options = { threshold: 0.1, rootMargin: '0px 0px -100px 0px' }
+  options: IntersectionOptions = { threshold: 0.1, rootMargin: '0px 0px -100px 0px' }
 ) => {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const ref = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
-    // Ensure rootMargin has a default value if not provided
-    const finalOptions = {
-      threshold: options.threshold,
-      rootMargin: options.rootMargin || '0px 0px -100px 0px'
-    };
-
     const observer = new IntersectionObserver(([entry]) => {
       setIsIntersecting(entry.isIntersecting);
-    }, finalOptions);
+    }, options);
 
     if (ref.current) {
       observer.observe(ref.current);
