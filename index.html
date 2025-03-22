@@ -1,277 +1,136 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dana - News Producer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f6f2;
+            color: #3d3a36;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #e6e1d8;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        nav {
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #6b665a;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        video, iframe {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .resume {
+            background-color: #e6e1d8;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e6e1d8;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
 
-<!--
+<header>
+    <h1>Hi, I'm Dana</h1>
+</header>
 
-----------------------------
-----------------------------
-----------------------------
+<nav>
+    <a href="#videos">Videos</a>
+    <a href="#articles">Articles</a>
+    <a href="#about">About</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-||||||||||||    |||      |||
-|||      |||    |||      |||
-|||      |||    |||      |||
-||||||||||||    |||      |||
-||| \\\         ||||||||||||
-|||  \\\        |||      |||
-|||   \\\       |||      |||
-|||    \\\      |||      |||
-|||     \\\     |||      |||
+<div class="container">
+    <section id="videos">
+        <h2>My Videos</h2>
+        <video controls>
+            <source src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video controls>
+            <source src="video2.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="video3.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="video4.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="video5.mp4" type="video/mp4">
+        </video>
+    </section>
 
-----------------------------
-----------------------------
-----------------------------
+    <section id="articles">
+        <h2>My Articles</h2>
+        <ul>
+            <li><a href="article1.html">Article 1</a></li>
+            <li><a href="article2.html">Article 2</a></li>
+            <li><a href="article3.html">Article 3</a></li>
+            <li><a href="article4.html">Article 4</a></li>
+            <li><a href="article5.html">Article 5</a></li>
+        </ul>
+    </section>
 
-Hey, what are you doing here? ;)
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a dedicated News Producer with a passion for storytelling and journalism.</p>
+    </section>
 
-reesehammerstrom@gmail.com
-
--->
-
-
-<html>
-
-  <head>
-
-    <title>@reesehammer</title>
-    <link rel="stylesheet" type="text/css" href="home.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0 ,user-scalable=no">
-	   <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/wARhimV.png"/>
-     <!-- Google Analytics -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118230484-2"></script>
-     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-118230484-2');
-    </script>
-
-  </head>
-
-  <body>
-
-    <div class="master_wrap">
-
-      <div class="desktop">
-    		<div class="d_cont">
-    			<div class="d_content">
-    				<h1>Hey, I'm Reese.</h1>
-    				<p>Some things on my mind:</p><div class="cycle">
-                <section> <!-- move this div as a class of section?? -->
-                	<h3>
-                		<div>
-                			<span>Wife</span>
-                			<span>Santa Barbara</span>
-                			<span>eCommerce</span>
-                			<span>Zeus</span>
-                			<span>Golf</span>
-                		</div>
-                	</h3>
-                </section>
-              </div>
-    			</div>
-    		</div>
-    	</div>
-
-
-    <div class="mobile">
-  		<!-- Main btn to open nav hide for now
-        <div class="nav_btn" id="nav_btn">
-          <button onclick="openNav()">+</button>
+    <section id="resume">
+        <h2>Resume</h2>
+        <div class="resume">
+            <p><strong>Experience:</strong> News Producer at XYZ News</p>
+            <p><strong>Skills:</strong> Video Editing, Writing, Research</p>
         </div>
-      -->
-  		<!-- Btn to close the nav when it's open -->
-  		<div class="nav_hide_btn hide" id="close_nav">
-  			<div class="close_nav">
-  				<button onclick="closeNav()">-</button>
-  			</div>
-  		</div>
+    </section>
 
-
-  		<!-- The nav   -->
-		<div class="nav hide" id="nav_bar">
-  			<div class="nav_wrap">
-	  				<div class="item">
-	  					<button onclick="window.location.href = 'https://reesehammer.com/airtable'; " href="https://reesehammer.com/airtable">AirTable</button>
-	  				</div>
-		  			<div class="item">
-		  				<button onclick="window.location.href = 'https://nomadgoods.com/'; " href="https://nomadgoods.com/">Yo</button>
-		  			</div>
-		  			<div class="item">
-		  				<button onclick="window.location.href = 'https://nomadgoods.com/'; " href="https://nomadgoods.com/">Yo</button>
-		  			</div>
-		  			<div class="item">
-		  				<button onclick="open_contact()">+</button>
-		  			</div>
-  			</div>
-  		</div>
-
-
-  		<!-- Nav Block (+) -->
-  		<div class="hide" id="block_plus">
-  			<div class="block">
-	  			<div class="block_cont">
-	  				<p>Yo</p>
-	  			</div>
-  			</div>
-  		</div>
-
-
-		<!-- hero img in hero -->
-		<div class="intro" style="background-image: url(hero_1.jpg);">
-
-		</div><p class="caption">Isla Vista, CA | 12.30.20</p>
-
-
-
-  		<div class="hero-fade">
-        <div class="profile-img" style="background-image: url(headshot2020.jpg)">
-  			</div>
-
-  			<div class="intro-cont">
-  				<div class="hero-txt">
-            <h1>Reese Hammerstrom</h1>
-            <h2>Ecommerce Director | Nomad</h2>
-
-
-
-          </div>
-  			</div>
-      </div><div class="main-content">
-
-  			<!-- Start intro section -->
-
-
-        <div class="quote">
-          <div class="img-2" style="background-image: url(zeus.jpg);"></div>
-          <div>
-            <h3>Zeus</h3>
-            <p>He looks cute and innocent, but he quite annoying and is constantly a force to reckon with. If you've been on a Zoom call with me, you've probably met him. If you have owned a Dachshund, you know the struggle.</p>
-          </div>
-        </div>
-
-        <div class="quote">
-          <div class="img-2" style="background-image: url(zeus.jpg);"></div>
-          <div>
-            <h3>Zeus</h3>
-            <p>He looks cute and innocent, but he quite annoying and is constantly a force to reckon with. If you've been on a Zoom call with me, you've probably met him. If you have owned a Dachshund, you know the struggle.</p>
-          </div>
-        </div>
-
-        <div class="quote">
-          <div class="img-2" style="background-image: url(zeus.jpg);"></div>
-          <div>
-            <h3>Zeus</h3>
-            <p>He looks cute and innocent, but he quite annoying and is constantly a force to reckon with. If you've been on a Zoom call with me, you've probably met him. If you have owned a Dachshund, you know the struggle.</p>
-          </div>
-        </div>
-
-        <div class="quote">
-          <div class="img-2" style="background-image: url(zeus.jpg);"></div>
-          <div>
-            <h3>Zeus</h3>
-            <p>He looks cute and innocent, but he quite annoying and is constantly a force to reckon with. If you've been on a Zoom call with me, you've probably met him. If you have owned a Dachshund, you know the struggle.</p>
-          </div>
-        </div>
-
-        <div class="quote">
-          <div class="img-2" style="background-image: url(zeus.jpg);"></div>
-          <div>
-            <h3>Zeus</h3>
-            <p>He looks cute and innocent, but he quite annoying and is constantly a force to reckon with. If you've been on a Zoom call with me, you've probably met him. If you have owned a Dachshund, you know the struggle.</p>
-          </div>
-        </div>
-
-
-
-		    	<!-- </div> -->
-
-
-
-
-    </div>
-
- 	<section class="footer">
-
-    <div>
-        <a target="_blank" href="https://www.instagram.com/reesehammer">Instagram</a>
-    <a target="_blank" href="https://nomadgoods.com/">Nomad</a>
-    <a target="_blank" href="https://www.linkedin.com/in/reesehammer/">LinkedIn</a>
-    <a target="_blank" href="https://ts.la/reese51104
-">Get 1,000 Free Supercharging Miles</a>
-    </div>
-
-    <div>
-        <a target="_blank" href="https://github.com/reesehammer
-        ">written by @reesehammer</a>
-    </div>
-
-
-</section></div>
-
-
- 	<!-- Open Nav -->
- 	<script>
-
- 		function openNav() {
-		  	var hide_nav_btn = document.getElementById("nav_btn");
-		  	hide_nav_btn.classList.add("hide");
-
-		  	var open_nav = document.getElementById("nav_bar");
-		  	open_nav.classList.remove("hide");
-
-		  	var open_nav_2 = document.getElementById("nav_bar");
-		  	open_nav_2.classList.add("nav-is-open");
-
-		  	var close_nav_btn = document.getElementById("close_nav");
-		  	close_nav_btn.classList.remove("hide");
-
-        var nav_operer_animate_change  = document.getElementById("nav_btn");
-        nav_operer_animate_change = add("nav-has-opened")
-		}
-
-	</script>
-
-
-	<!-- Menu Close -->
-	<script>
-
-		function closeNav() {
-			var close_close_btn_2 = document.getElementById("close_nav");
-			close_close_btn_2.classList.add("hide");
-
-			var close_nav_2 = document.getElementById("nav_bar");
-			close_nav_2.classList.add("hide");
-
-			var open_og_nav = document.getElementById("nav_btn");
-			open_og_nav.classList.remove("hide");
-
-			var block_1_close = document.getElementById("block_plus");
-			block_1_close.classList.add("hide");
-		}
-
-	</script>
-
-	<!-- Blaock 1 btn -->
-	<script>
-
-		function open_contact() {
-			var block_plus = document.getElementById("block_plus");
-			block_plus.classList.toggle("hide");
-		}
-
-	</script>
-
-
-
-
-
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    </section>
 </div>
 
+<footer>
+    &copy; 2025 Dana. All rights reserved.
+</footer>
+
 </body>
-<!--
-
-"Your world is a living expression of how you are using and have used your mind."
-- Earl Nightingale
-
--->
 </html>
